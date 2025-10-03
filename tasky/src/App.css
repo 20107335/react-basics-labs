@@ -21,6 +21,7 @@ button {
   margin: 4px 6px;
   width: 50px;
   height: 25px;
+  text-transform: capitalize;
 }
 
 .doneButton {
@@ -39,7 +40,8 @@ button {
   background-color: #f0f0f0;
 }
 
-input[type=text], input[type=date] {
+/* Form input and select styles */
+input[type=text], input[type=date], select {
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
@@ -48,6 +50,11 @@ input[type=text], input[type=date] {
   border-radius: 4px;
   box-sizing: border-box;
   font-family: inherit;
+}
+
+select {
+  background-color: white;
+  cursor: pointer;
 }
 
 
@@ -63,11 +70,34 @@ form button[type="submit"] {
   font-style: normal;
   font-size: 1em;
   height: auto;
+  text-transform: capitalize;
 }
 
 form button[type="submit"]:hover {
   background-color: #45a049;
 }
+
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: #333;
+}
+
+
+form {
+  text-align: left;
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+
+
 
 
 form {
